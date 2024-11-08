@@ -7,7 +7,7 @@ services:
       - "3310:3306"
     environment:
       MYSQL_ROOT_PASSWORD: rootpassword
-      MYSQL_DATABASE: bookby
+      MYSQL_DATABASE: jewelry_workshop
     volumes:
       - db_data:/var/lib/mysql
     networks:
