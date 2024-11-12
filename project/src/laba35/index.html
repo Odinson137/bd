@@ -1,38 +1,38 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-  <title>Форма изменения данных</title>
+    <title>Форма изменения данных</title>
 </head>
 <body>
 <h1>Изменение данных о ювелирных изделиях</h1>
 <form action="update.php" method="post">
-  <h2>Изменить стоимость изделия</h2>
-  <label for="product_type">Тип изделия:</label>
-  <select name="product_type" id="product_type">
-    <option value="серебряное кольцо">Серебряное кольцо</option>
-  </select><br>
+    <h2>Изменить стоимость изделия</h2>
+    <label for="product_type">Тип изделия:</label>
+    <select name="product_type" id="product_type">
+        <option value="серебряное кольцо">Серебряное кольцо</option>
+    </select><br>
 
-  <label for="article">Артикул:</label>
-  <input type="text" name="article" id="article" placeholder="1234"><br>
+    <label for="article">Артикул:</label>
+    <input type="text" name="article" id="article" placeholder="1234"><br>
 
-  <label for="new_price">Новая стоимость:</label>
-  <input type="number" step="0.01" name="new_price" id="new_price"><br>
+    <label for="new_price">Новая стоимость:</label>
+    <input type="number" step="0.01" name="new_price" id="new_price"><br>
 
-  <label for="date">Дата поступления:</label>
-  <input type="date" name="date" id="date" placeholder="2020-09-10"><br>
+    <label for="date">Дата поступления:</label>
+    <input type="date" name="date" id="date" placeholder="2020-09-10"><br>
 
-  <input type="submit" name="update_price" value="Изменить стоимость">
+    <input type="submit" name="update_price" value="Изменить стоимость">
 </form>
 
 <form action="update.php" method="post">
-  <h2>Изменить название колье</h2>
-  <label for="old_name">Текущее название:</label>
-  <input type="text" name="old_name" id="old_name" placeholder="колье"><br>
+    <h2>Изменить название колье</h2>
+    <label for="old_name">Текущее название:</label>
+    <input type="text" name="old_name" id="old_name" placeholder="колье"><br>
 
-  <label for="new_name">Новое название:</label>
-  <input type="text" name="new_name" id="new_name" placeholder="колье со стразами"><br>
+    <label for="new_name">Новое название:</label>
+    <input type="text" name="new_name" id="new_name" placeholder="колье со стразами"><br>
 
-  <input type="submit" name="update_name" value="Изменить название">
+    <input type="submit" name="update_name" value="Изменить название">
 </form>
 </body>
 </html>

@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Управление данными ювелирных изделий</title>
+</head>
+<body>
+<h1>Добавить или удалить данные о ювелирных изделиях</h1>
+
+<!-- Форма для добавления изделия -->
+<form action="manage.php" method="post">
+    <h2>Добавить новое изделие</h2>
+    <label for="item_name">Название изделия:</label>
+    <input type="text" name="item_name" id="item_name" required><br>
+
+    <label for="article">Артикул:</label>
+    <input type="text" name="article" id="article" required><br>
+
+    <label for="price">Цена:</label>
+    <input type="number" step="0.01" name="price" id="price" required><br>
+
+    <label for="purchase_date">Дата поступления:</label>
+    <input type="date" name="purchase_date" id="purchase_date" required><br>
+
+    <input type="submit" name="add_item" value="Добавить изделие">
+</form>
+
+<!-- Форма для удаления изделия -->
+<form action="manage.php" method="post">
+    <h2>Удалить изделие по артикулу</h2>
+    <label for="delete_article">Артикул изделия:</label>
+    <input type="text" name="delete_article" id="delete_article" required><br>
+
+    <input type="submit" name="delete_item" value="Удалить изделие">
+</form>
+</body>
+</html>
