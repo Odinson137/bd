@@ -18,5 +18,4 @@ if (!@mysqli_select_db($dbcnx, $dbname)) {
 }
 
 echo "<p>Успешное подключение к базе данных</p>";
-
 ?>
