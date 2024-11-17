@@ -1,5 +1,14 @@
-﻿# Используем PHP с Apache
-FROM php:8.2-apache
+﻿FROM php:8.2-apache
 
-# Устанавливаем расширение mysqli
-RUN docker-php-ext-install mysqli
+# Устанавливаем необходимые расширения PHP
+RUN docker-php-ext-install mysqli pdo pdo_mysql
+
+# Копируем файлы проекта в контейнер
+WORKDIR /var/www/html
+COPY . .
+
+# Устанавливаем права
+RUN chown -R www-data:www-data /var/www/html
+
+# Запускаем Apache
+CMD ["apache2-foreground"]
