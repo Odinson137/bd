@@ -31,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         $mail->setFrom('sanya.baginsky@gmail.com', 'Ваш Сервис'); // От кого
         $mail->addAddress($email, $username); // Кому
-        $mail->Subject = 'Регистрация успешна';
+        $mail->Subject = 'Registration was saccccccessssssfullllyyyy';
         $mail->Body = "Send me nuds, $username!\n\n and it was sending from laba38.";
 
         if ($mail->send()) {
